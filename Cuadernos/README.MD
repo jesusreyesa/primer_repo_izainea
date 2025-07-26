@@ -1,11 +1,37 @@
-## Cuadernos
+# Proyecto DIP_USTA - Análisis de Cobertura Educativa
 
-Esta carpeta contiene los cuadernos de Jupyter utilizados para la exploración de datos, análisis, visualización y desarrollo de modelos en este proyecto. Los cuadernos están organizados de la siguiente manera:
+Este repositorio contiene el desarrollo de un modelo de análisis de datos para estudiar el comportamiento de la **cobertura neta** y la **tasa de matriculados** en Colombia a lo largo del tiempo y del espacio.
 
-- **Exploración de Datos**: Cuadernos que contienen análisis exploratorio de datos (EDA), visualizaciones iniciales y descubrimiento de patrones importantes en los datos.
-- **Preparación de Datos**: Cuadernos dedicados a la limpieza de datos, transformación, normalización y cualquier otro proceso de pre-procesamiento necesario antes de la modelización.
-- **Modelización**: Cuadernos donde se desarrollan, entrenan y evalúan los modelos de machine learning. Aquí también se incluyen experimentos con diferentes algoritmos y ajustes de hiperparámetros.
-- **Visualización y Reportes**: Cuadernos que generan visualizaciones avanzadas y reportes para comunicar los hallazgos del análisis y los resultados de los modelos a otros miembros del equipo o partes interesadas.
-- **Miscellaneous**: Cualquier otro cuaderno que no se ajuste a las categorías anteriores, pero que sea relevante para el proyecto.
+## Estructura del Repositorio
 
-Cada cuaderno debe estar bien documentado, con comentarios claros y concisos que expliquen cada paso del análisis o proceso realizado.
+- `cuadernos/`  
+  Contiene los notebooks y scripts en Python utilizados para la limpieza y modelado de los datos. Incluye el procesamiento de variables como nombres inconsistentes de **departamentos** y **municipios**, y la consolidación de fuentes de información.
+
+- `streamlit_app/`  
+  Aplicación desarrollada en **Streamlit**, donde se visualizan los análisis del comportamiento de la cobertura neta y la tasa de matrícula. Se integran fuentes secundarias en la medida de lo posible, y se presenta la información de forma **clara**, **autocontenida**, con escalas de color adecuadas y mensajes comprensibles.
+
+- `datos/`  
+  Archivos de datos crudos y procesados, listos para su análisis y visualización.
+
+- `utils/`  
+  Funciones de apoyo para la carga, transformación y visualización de los datos, reutilizables en diferentes notebooks o scripts.
+
+## Descripción General
+
+- 📊 **Notebook/Script**:  
+  Se hace limpieza de datos respondiendo a los requerimientos definidos por el profesor Zainea, abordando problemas como nombres incorrectos en los campos geográficos y consolidación de información.
+
+- 🌐 **App Streamlit**:  
+  Herramienta interactiva para explorar los resultados de forma amigable. Presenta:
+
+  - Evolución temporal de indicadores educativos.
+  - Comparación espacial entre municipios y departamentos.
+  - Uso de escalas de color consistentes.
+  - Explicación clara de métricas y resultados.
+
+## Instrucciones para Ejecutar
+
+1. Clona el repositorio.
+2. Instala los requerimientos:  
+   ```bash
+   pip install -r requirements.txt
